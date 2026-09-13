@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f8fbff;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.navbar {
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 6vw;
+    background-color: #ffffff;
+    box-shadow: 0 0.5vh 1.5vh rgba(0, 0, 0, 0.05);
+}
+
+.Logo {
+    font-size: 2vw;
+    font-weight: 800;
+    color: #1e90ff;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 3vw;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 1.5vw;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #1e90ff;
+    
+}
+
+.user-profile a {
+    background-color: #eff6ff;
+    color:#2563ed;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.user-profile::before {
+    
+    font-size: 1.5vw;
+    background-color: #dbeafe;
+}
+
+.hero-section {
+    height: 88vh;
+    display: flex;
+    align-items: center;
+    padding: 0 6vw;
+}
+
+.hero-left {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-right: 5vw;
+}
+
+.hero-left h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    color:#1a202c;
+    margin-bottom: 20px;
+   
+}
+
+.hero-left  h1 span {
+    color: #1e90ff;
+
+}
+
+.hero-left p {
+    font-size: 16px;
+    color: #4a5568;
+    margin-bottom: 32px;
+    line-height: 1.7;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    box-shadow: 0 4px 6px -1px rgba(38, 100, 290, 4);
+    transition: all 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(37,99, 235, 0.3);
+}
+
+.hero-right {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-right img {
+    width: 38vw;
+    /* Scales with screen width */
+    height: 65vh;
+    /* Scales with screen height */
+    object-fit: cover;
+    border-radius: 2vw;
+    box-shadow: 0 2vh 4vh rgba(0, 0, 0, 0.15);
+}
